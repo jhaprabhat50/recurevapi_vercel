@@ -420,6 +420,16 @@
 </div>
 <!-- Services End -->
 
+    <!-- JavaScript to Toggle Hidden Cards -->
+<script>
+    document.getElementById('showMoreBtn').addEventListener('click', function() {
+        const hiddenCards = document.querySelectorAll('.extra-service');
+        hiddenCards.forEach(card => card.style.display = 'block');
+        this.style.display = 'none'; // Hide button after click
+    });
+</script>
+
+
 
         <!-- Feature Start -->
         <div class="container-fluid feature py-5">
