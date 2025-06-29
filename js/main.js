@@ -111,18 +111,16 @@
 
     
     
-   // Back to top button
-   $(window).scroll(function () {
+ // Back‑to‑Top & WhatsApp buttons
+$(window).scroll(function () {
     if ($(this).scrollTop() > 300) {
         $('.back-to-top').fadeIn('slow');
+        $('.whatsapp-float').fadeIn('slow');   // ← add this line
     } else {
         $('.back-to-top').fadeOut('slow');
+        $('.whatsapp-float').fadeOut('slow');  // ← add this line
     }
-    });
-    $('.back-to-top').click(function () {
-        $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
-        return false;
-    });
+});
 
 
 })(jQuery);
